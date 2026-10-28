@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Formulir Pendaftaran Seminar</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="form-card">
+      <div class="header">
+        <p class="eyebrow">SEMINAR MAHASISWA • 2026</p>
+        <h1>Formulir Pendaftaran Seminar</h1>
+        <p class="intro">Lengkapi data berikut untuk mendaftarkan diri dan memilih sesi seminar yang kamu minati.</p>
+      </div>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Data Peserta</legend>
+          <table class="form-table">
+            <tr>
+              <th><label for="nama">Nama lengkap</label></th>
+              <td><input type="text" id="nama" name="nama" /></td>
+            </tr>
+            <tr>
+              <th><label for="nim">NIM</label></th>
+              <td><input type="text" id="nim" name="nim" /></td>
+            </tr>
+            <tr>
+              <th>Jenis kelamin</th>
+              <td>
+                <label class="choice" for="laki"><input type="radio" id="laki" name="jk" value="Laki-laki" /> Laki-laki</label>
+                <label class="choice" for="perempuan"><input type="radio" id="perempuan" name="jk" value="Perempuan" /> Perempuan</label>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="prodi">Program studi</label></th>
+              <td>
+                <select id="prodi" name="prodi">
+                  <option value="Informatika">Informatika</option>
+                  <option value="Sistem Informasi">Sistem Informasi</option>
+                  <option value="Teknik Industri">Teknik Industri</option>
+                  <option value="Manajemen">Manajemen</option>
+                  <option value="Akuntansi">Akuntansi</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pilihan Seminar</legend>
+          <table class="form-table">
+            <tr>
+              <th>Jenis tiket</th>
+              <td>
+                <label class="choice" for="reguler"><input type="radio" id="reguler" name="tiket" value="Reguler" /> Reguler</label>
+                <label class="choice" for="vip"><input type="radio" id="vip" name="tiket" value="VIP" /> VIP</label>
+              </td>
+            </tr>
+            <tr>
+              <th>Topik seminar</th>
+              <td>
+                <div class="topic-list">
+                  <label class="choice" for="web"><input type="checkbox" id="web" name="topik" value="Web Development" /> Web Development</label>
+                  <label class="choice" for="data"><input type="checkbox" id="data" name="topik" value="Data Science" /> Data Science</label>
+                  <label class="choice" for="ai"><input type="checkbox" id="ai" name="topik" value="Artificial Intelligence" /> Artificial Intelligence</label>
+                </div>
+                <p class="help-text">Kamu dapat memilih lebih dari satu topik.</p>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informasi Tambahan</legend>
+          <table class="form-table">
+            <tr>
+              <th><label for="alasan">Alasan mengikuti seminar</label></th>
+              <td>
+                <textarea id="alasan" name="alasan" rows="5" cols="30"></textarea>
+                <p class="help-text">Ceritakan hal yang ingin kamu pelajari dari seminar ini.</p>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="bukti">Bukti pembayaran</label></th>
+              <td>
+                <input type="file" id="bukti" name="bukti" accept="image/jpeg, image/png, application/pdf" />
+                <p class="help-text">Unggah bukti pembayaran dalam format JPG, PNG, atau PDF.</p>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <div class="actions">
+          <input type="submit" name="simpan" value="Kirim Pendaftaran" />
+          <input type="reset" name="reset" value="Kosongkan Form" />
+        </div>
+        <p class="note">Periksa kembali data sebelum mengirim formulir.</p>
+      </form>
+    </div>
+    <p class="signature">CSS Advance 2 • NPM 13352</p>
+  </div>
+</body>
+</html>
