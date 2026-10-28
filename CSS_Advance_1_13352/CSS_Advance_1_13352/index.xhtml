@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Formulir Pendaftaran Organisasi Mahasiswa</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="form-card">
+      <div class="form-header">
+        <p class="eyebrow">KAMPUS • KEGIATAN MAHASISWA</p>
+        <h1>Formulir Pendaftaran Organisasi</h1>
+        <p class="subtitle">Isi informasi berikut dengan benar untuk bergabung dan berkembang bersama kami.</p>
+      </div>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Informasi Pribadi</legend>
+
+          <div class="form-row">
+            <label for="namahs">Nama lengkap</label>
+            <input type="text" id="namahs" name="namahs" size="30" />
+          </div>
+
+          <div class="form-row">
+            <span class="field-label">Jenis kelamin</span>
+            <div class="options">
+              <label for="laki"><input type="radio" id="laki" name="jk" value="Laki-Laki" /> Laki-laki</label>
+              <label for="perempuan"><input type="radio" id="perempuan" name="jk" value="Perempuan" /> Perempuan</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="prodi">Program studi</label>
+            <select id="prodi" name="prodi">
+              <option value="">-- Pilih program studi --</option>
+              <option value="Informatika">Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="Teknik Industri">Teknik Industri</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Alamat email</label>
+            <input type="text" id="email" name="email" size="30" />
+          </div>
+
+          <div class="form-row">
+            <label for="telepon">Nomor telepon</label>
+            <input type="text" id="telepon" name="telepon" size="30" />
+          </div>
+
+          <div class="form-row">
+            <label for="password">Kata sandi</label>
+            <input type="password" id="password" name="password" size="30" />
+          </div>
+
+          <div class="form-row">
+            <label for="photo">Foto diri</label>
+            <input type="file" id="photo" name="photo" accept="image/gif, image/jpeg, image/png" />
+            <p class="help-text">Format yang didukung: JPG, PNG, atau GIF.</p>
+          </div>
+
+          <div class="form-row">
+            <label for="namasmu">Nama sekolah asal</label>
+            <input type="text" id="namasmu" name="namasmu" size="30" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Minat dan Perkenalan</legend>
+
+          <div class="form-row">
+            <span class="field-label">Musik yang disukai</span>
+            <div class="options">
+              <label for="musik1"><input type="checkbox" id="musik1" name="musik" value="Pop" /> Pop</label>
+              <label for="musik2"><input type="checkbox" id="musik2" name="musik" value="Rock" /> Rock</label>
+              <label for="musik3"><input type="checkbox" id="musik3" name="musik" value="Jazz" /> Jazz</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <span class="field-label">Film favorit</span>
+            <div class="options">
+              <label for="film1"><input type="checkbox" id="film1" name="film" value="Drama" /> Drama</label>
+              <label for="film2"><input type="checkbox" id="film2" name="film" value="Action" /> Action</label>
+              <label for="film3"><input type="checkbox" id="film3" name="film" value="Sci-Fi" /> Sci-Fi</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="resume">Ceritakan tentang dirimu</label>
+            <textarea id="resume" name="resume" rows="6" cols="30"></textarea>
+            <p class="help-text">Tuliskan minat, pengalaman, atau alasan ingin bergabung dengan organisasi.</p>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" name="simpan" value="Kirim Pendaftaran" />
+          <input type="reset" name="ulang" value="Reset Form" />
+        </div>
+        <p class="footer-note">Pastikan seluruh informasi yang kamu isi sudah sesuai sebelum dikirim.</p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
